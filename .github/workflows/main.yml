@@ -8,6 +8,7 @@ on:
 
 jobs:
   build:
+
     runs-on: ubuntu-latest # Define o sistema operacional para executar o workflow.
 
     steps:
@@ -18,7 +19,6 @@ jobs:
           echo "Nenhum teste implementado ainda. Adicione testes em script.js!"
           echo "Podemos adicionar testes com Jest ou Cypress no futuro."
           echo "Testes simulados aprovados"
-
           exit 0 # Simula testes passando
 
       - name: Deploy para GitHub Pages
